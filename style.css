@@ -1558,4 +1558,254 @@ SCREEN FADE
 
 }
 
+/* ===============================
+   MOBILE FINAL
+=================================*/
+
+@media screen and (max-width:768px){
+
+/* 전체 */
+
+body{
+overflow-x:hidden;
+}
+
+/* Opening */
+
+.opening{
+height:70vh;
+padding:0 25px;
+}
+
+.opening h2{
+font-size:42px;
+line-height:1.2;
+}
+
+/* 메모리 */
+
+.memory{
+display:flex;
+flex-direction:column !important;
+gap:30px;
+margin:90px auto;
+}
+
+.memory .image{
+width:100%;
+}
+
+.memory img{
+height:auto;
+aspect-ratio:3/4;
+object-fit:cover;
+}
+
+.memory .text{
+width:100%;
+text-align:center;
+padding:0 8px;
+}
+
+.memory h2{
+font-size:38px;
+margin:15px 0;
+}
+
+.memory p{
+font-size:16px;
+line-height:2;
+}
+
+/* OUR STORY */
+
+.story{
+margin:120px auto;
+}
+
+.storyTitle h2{
+font-size:38px;
+}
+
+.storyDesc{
+font-size:15px;
+line-height:1.8;
+padding:0 15px;
+}
+
+/* 사진 */
+
+.storyGrid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.storyGrid img{
+height:auto;
+aspect-ratio:3/4;
+object-fit:cover;
+}
+
+/* chapter */
+
+.chapter{
+padding:120px 0;
+}
+
+.chapterTitle h2{
+font-size:38px;
+}
+
+.filmStrip{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.filmStrip img{
+height:auto;
+aspect-ratio:3/4;
+object-fit:cover;
+}
+
+.finalGrid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.finalGrid img{
+height:auto;
+aspect-ratio:3/4;
+object-fit:cover;
+}
+
+/* 편지 */
+
+.letter{
+padding:40px 15px;
+}
+
+.letterBox{
+padding:28px;
+}
+
+#typingText{
+
+font-size:18px;
+
+line-height:2.25;
+
+word-break:keep-all;
+
+overflow-wrap:break-word;
+
+letter-spacing:-0.2px;
+
+}
+
+/* 엔딩 */
+
+.ending{
+padding:0 20px;
+height:auto;
+min-height:70vh;
+}
+
+.endingSmall{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.ending h2{
+
+font-size:42px;
+
+text-align:center;
+
+line-height:1.25;
+
+padding: 0.12px;
+
+word-break:keep-all;
+
+}
+
+.ending p{
+
+font-size:17px;
+
+line-height:2;
+
+text-align:center;
+
+}
+
+/* 크레딧 */
+
+.credits h2{
+
+font-size:46px;
+
+}
+
+.credits h3{
+
+font-size:24px;
+
+}
+
+.credits p{
+
+font-size:15px;
+
+}
+
+/* 마지막 */
+
+#finalMessage{
+
+padding:0 20px;
+
+}
+
+#finalMessage h2{
+
+font-size:34px;
+
+line-height:1.6;
+
+white-space: nowrap;
+
+word-break:keep-all;
+
+text-align: center;
+
+}
+
+#finalMessage p{
+
+font-size:16px;
+
+}
+
+/* 버튼 */
+
+#replayBtn{
+
+width:150px;
+
+height:55px;
+
+right:18px;
+
+bottom:18px;
+
+font-size:16px;
+
+}
+
+}
+
     

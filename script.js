@@ -118,6 +118,9 @@ const memoryImages = document.querySelectorAll(".memory img");
 
 window.addEventListener("scroll",()=>{
 
+    if(window.innerWidth <= 768) return;
+
+
     memoryImages.forEach(img=>{
 
         const rect = img.getBoundingClientRect();
@@ -274,6 +277,8 @@ revealStoryImages();
 
 window.addEventListener("scroll", () => {
 
+     if(window.innerWidth <= 768) return;
+
     storyImages.forEach((img, index) => {
 
         const speed = (index % 4 + 1) * 0.08;
@@ -351,6 +356,8 @@ revealFilmImages();
 // =============================
 
 window.addEventListener("scroll", () => {
+
+     if(window.innerWidth <= 768) return;
 
     filmImages.forEach((img, index) => {
 
@@ -430,6 +437,8 @@ revealFinalImages();
 // =============================
 
 window.addEventListener("scroll", () => {
+
+    if(window.innerWidth <= 768) return;
 
     finalImages.forEach((img, index) => {
 
