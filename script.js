@@ -228,17 +228,9 @@ window.addEventListener("scroll",()=>{
 // PRELOAD
 // =============================
 
-const preload = [];
 
-for(let i=1;i<=85;i++){
 
-    const img = new Image();
 
-    img.src = `images/photo${String(i).padStart(2,"0")}.jpg`;
-
-    preload.push(img);
-
-}
 // =============================
 // STORY SCROLL ANIMATION
 // =============================
