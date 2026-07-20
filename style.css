@@ -1642,10 +1642,10 @@ padding:0 15px;
 
 .storyGrid img{
 width:100%;
-height:auto;
-aspect-ratio:auto;
-object-fit:contain;
-background:none;
+height:260px;
+object-fit:cover;
+object-position:center;
+border-radius:8px;
 }
 
 /* chapter */
@@ -1665,10 +1665,10 @@ font-size:38px;
 
 .filmStrip img{
 width:100%;
-height:auto;
-aspect-ratio:auto;
-object-fit:contain;
-background:none;
+height:260px;
+object-fit:cover;
+object-position:center;
+border-radius:8px;
 }
 
 .finalGrid{
@@ -1678,10 +1678,10 @@ background:none;
 
 .finalGrid img{
 width:100%;
-height:auto;
-aspect-ratio:auto;
-object-fit:contain;
-background:none;
+height:260px;
+object-fit:cover;
+object-position:center;
+border-radius:8px;
 }
 
 /* 편지 */
