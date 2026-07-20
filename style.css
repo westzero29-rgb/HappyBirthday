@@ -1726,9 +1726,11 @@ text-align:center;
 
 line-height:1.25;
 
-padding: 0.12px;
+padding: 0 12px;
 
 word-break:keep-all;
+
+overflow-wrap:break-word;
 
 }
 
@@ -1772,11 +1774,10 @@ padding:0 20px;
 
 #finalMessage h2{
 
-font-size:34px;
+font-size:32px;
 
-line-height:1.6;
+line-height:1.5;
 
-white-space: nowrap;
 
 word-break:keep-all;
 
