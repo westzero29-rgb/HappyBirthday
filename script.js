@@ -221,8 +221,21 @@ window.addEventListener("scroll",()=>{
 
 
 
+// =============================
+// PRELOAD
+// =============================
 
+const preload = [];
 
+for(let i=1;i<=85;i++){
+
+    const img = new Image();
+
+    img.src = `images/photo${String(i).padStart(2,"0")}.jpg`;
+
+    preload.push(img);
+
+}
 // =============================
 // STORY SCROLL ANIMATION
 // =============================
@@ -499,33 +512,76 @@ for(let i=0;i<180;i++){
 
 const letterText = `
 
-시원아.
+TO. 세상에서 제일 소중한 시원이
 
-생일 정말 축하해.
+시원아 안녕! 놀랐지??
+시원이가 좋아했으면 하는 마음으로 열심히 만들어봤어. 어때??
 
-오늘이라는 하루가
-세상 누구보다 행복한 하루였으면 좋겠어.
+20대 첫 생일을 함께 보낸 것도 나에게는 너무나도 소중한 추억 중 하나였는데,
+시원이의 21번째 생일도 내가 함께 축하해줄 수 있어서 너무 기뻐!!
 
-우리 함께했던 모든 순간들이
-나에게는 평생 잊지 못할 소중한 추억이야.
+원래였으면 만나서 하루 종일 재밌게 놀고 맛있는 것도 먹고,
+이것저것 하면서 보냈을 텐데 시원이가 지금은 군대에 있으니까
+같이 보내지 못한다는 게 내심 조금 아쉽더라.
 
-앞으로도 지금처럼
-많이 웃고,
+그래서 괜히 생일을 그냥 평범하게 보내지는 않을까 하는 마음에,
+군대에서도 시원이가 충분히 행복한 생일을 보낼 수 있는 방법이 없을까 계속 생각하다가
+이 사이트를 만들게 됐어.
 
-많이 사랑하고,
+만들면서 정말 우리 추억이 1년 사이에 이렇게나 많이 쌓였다는 걸 새삼 또 느끼게 됐어.
+사진 하나하나를 보는데 시원이 옆에서 전보다 훨씬 밝아지고 행복하게 웃고 있는
+내 모습이 너무 보기 좋더라.
 
-오래오래 함께하자.
+항상 고마운 게 너무 많아, 시원아.
 
-항상 내 가장 큰 행복이 되어줘서 고마워.
+작년이 어쩌면 내가 가장 많이 무너지고 힘들었던 시기였는데,
+늘 내 옆에서 내가 시들지 않게 예쁜 꽃처럼 다시 피어날 수 있게 해줘서 고마워.
 
-Happy Birthday.
+시원이를 만난 후로는 내 자신을 사랑하는 법도 조금씩 알게 된 것 같아.
+평생 남들을 위해 주기만 했지, 나를 사랑해 본 적은 거의 없었는데
+시원이 덕분에 처음으로 그런 마음을 배운 것 같아.
 
-I Love You.
+그래서 내가 받은 사랑만큼 앞으로는 늘 시원이 옆에서
+변함없이 행복만 주는 사람이 될게.
 
-Always with you.
+앞으로 우리 둘이 함께 보내는 시간 속에는 여러 우여곡절도 분명 생기겠지만,
+그때마다 그 위기들을 새로운 기회로 바꿔 나갈 수 있게
+내가 항상 옆에서 함께할게.
+
+우리 둘 다 꼭 멋지게 성장해서 각자가 이루고 싶은 꿈도 다 이루고,
+더없이 행복하게 살자.
+
+그리고 나도 시원이 옆에서 언제나 떳떳한 버팀목이 되어줄 수 있는 사람이 되도록
+더 많이 노력할게.
+
+내 가장 큰 행복이 되어줘서 정말 고마워, 시원아.
+
+오래오래 함께하자. 🤍
+
+앞으로도 힘든 일이 생기면 혼자 다 이겨내려고만 하지 않았으면 좋겠어.
+가끔은 영락없는 애처럼 찡찡대도 괜찮아.
+
+나는 힘듦을 나눈다고 해서 슬픔이 두 배가 된다고 생각하지 않아.
+오히려 함께 나누면 같이 해결할 방법을 찾을 수 있고,
+다시 일어설 수 있는 힘도 생긴다고 믿어.
+
+그러니까 늘 다른 사람들의 버팀목만 되어주려고 하지 말고,
+가끔은 내게도 기대 줬으면 좋겠어.
+
+언제나 시원이 편인 사람,
+그리고 누구보다 시원이를 사랑하는 사람이 옆에 있다는 걸 잊지 않았으면 좋겠다.
+
+그리고 마지막으로...
+
+21번째 생일 진심으로 너무너무 축하해.
+
+태어나줘서 정말 고마워, 시원아.
+
+앞으로도 내 가장 큰 행복으로 오래오래 내 옆에 있어줘.
+
+사랑해, 시원아. 🤍
 
 - From. Seoyeong -
-
 `;
 
 const typingTarget = document.getElementById("typingText");
@@ -553,10 +609,10 @@ if(i < letterText.length){
 
     typingTarget.textContent += letterText.charAt(i);
 
-    let speed = 55;
+   let speed = 60;
 
-    if(i > letterText.length - 80){
-        speed = 110;
+   if(i > letterText.length - 80){
+    speed = 90;
     }
 
     i++;
@@ -855,6 +911,8 @@ document.querySelectorAll("img").forEach(img=>{
 
         lightbox.classList.add("show");
 
+        document.body.style.overflow = "hidden";
+
         lightboxImg.src = img.src;
 
     });
@@ -864,6 +922,7 @@ document.querySelectorAll("img").forEach(img=>{
 closeLightbox.addEventListener("click",()=>{
 
     lightbox.classList.remove("show");
+    document.body.style.overflow = "";
 
 });
 
@@ -872,6 +931,7 @@ lightbox.addEventListener("click",(e)=>{
     if(e.target===lightbox){
 
         lightbox.classList.remove("show");
+        document.body.style.overflow = "";
 
     }
 
@@ -882,6 +942,7 @@ document.addEventListener("keydown",(e)=>{
     if(e.key==="Escape"){
 
         lightbox.classList.remove("show");
+        document.body.style.overflow = "";
 
     }
 
@@ -900,3 +961,16 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+function setRealVh(){
+
+    document.documentElement.style.setProperty(
+        "--vh",
+        `${window.innerHeight * 0.01}px`
+    );
+
+}
+
+setRealVh();
+
+window.addEventListener("resize", setRealVh);
